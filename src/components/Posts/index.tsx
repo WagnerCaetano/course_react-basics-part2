@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 import "./style.css";
 
 export const Posts = () => {
@@ -8,6 +8,7 @@ export const Posts = () => {
   return (
     <div className="posts">
       <h1>Posts {`ID: ${id}`}</h1>
+      <Outlet />
     </div>
   );
 };
